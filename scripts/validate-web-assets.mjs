@@ -29,7 +29,7 @@ const slideSections = [...deck.matchAll(/<section class="slide(?: active)?" aria
 const slideDots = [...deck.matchAll(/class="dot-link"[^>]*data-slide=/g)];
 check(slideSections.length === 12, "HTML deck contains exactly 12 slides");
 check(slideDots.length === 12, "Slide navigation contains 12 page tabs");
-check(deck.includes("Photo Credits") && deck.includes("Pexels"), "Slide photo credits are present");
+check(deck.includes("PHOTO CREDITS") && deck.includes("Pexels"), "Slide photo credits are present");
 
 for (const [name, html] of [["Wiki", wiki], ["Slides", deck]]) {
   const scripts = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)];
