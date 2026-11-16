@@ -1,0 +1,16 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+private-data/
+calendar-exports/
+personal-photos/
+
+# Local tooling
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
