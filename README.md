@@ -3,7 +3,7 @@
 以可追溯研究來源整理個人化穿搭知識，並提供 HTML Wiki 與 12 頁 Lookbook 教學簡報。
 
 ## 目前可直接使用
-- **HTML Wiki：** [開啟穿搭研究所](https://pccc-pc.github.io/ai-ootd-knowledge-base/wiki/index.html)
+- **HTML Wiki：** [開啟穿搭研究所](https://pccc-pc.github.io/ai-ootd-knowledge-base/wiki/index.html)。八個主題均可展開閱讀完整原始 Markdown 內容。
 - **HTML 教學簡報：** [開啟 AI OOTD Lookbook](https://pccc-pc.github.io/ai-ootd-knowledge-base/slides/index.html)
 
 ## 專案內容
@@ -21,7 +21,7 @@
 採用 **Korean/Japanese Lookbook × Fashion Editorial**：暖米白、深橄欖綠、乾燥玫瑰與中性色調；穿搭照片作視覺示例，研究主張仍以 Wiki 和 Evidence Cards 為依據。照片來源及攝影者請見各 HTML 頁面的 Photo Credits。
 
 ## Wiki 互動
-八大主題索引、搜尋、收藏（儲存在目前瀏覽器的 localStorage）、深色／淺色閱讀模式、證據狀態提示、Evidence Card 連結、DOI／原始來源及原始 Markdown 連結。
+八大主題索引、搜尋、收藏（儲存在目前瀏覽器的 localStorage）、深色／淺色閱讀模式、證據狀態提示、Evidence Card 連結、DOI／原始來源、原始 Markdown 外連及可展開的完整 Markdown 內文。
 
 ## 簡報操作
 12 頁、側邊頁碼導覽、上一頁／下一頁、進度條、滑鼠滾輪、鍵盤方向鍵／PageUp／PageDown、觸控滑動及行動裝置響應式版面。
