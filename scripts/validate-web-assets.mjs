@@ -35,7 +35,7 @@ for (const [name, html] of [["Wiki", wiki], ["Slides", deck]]) {
   const scripts = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)];
   check(scripts.length === 1, name + " has one inline script block");
   new Function(scripts[0][1]);
-  const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map((m) => m[1]);
+  const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map((m) => m[1]).filter((id) => !id.includes("'+") && !id.includes("\${"));
   check(new Set(ids).size === ids.length, name + " has unique HTML IDs");
   check((html.match(/<img\b[^>]*\balt=/g) || []).length === (html.match(/<img\b/g) || []).length,
     name + " images all have alt text");
