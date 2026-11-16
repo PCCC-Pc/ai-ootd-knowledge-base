@@ -19,3 +19,12 @@
 - 若來源之間出現不同結論，需記錄差異與研究限制。
 
 > 本索引先建立主題架構；各主題知識將在來源查證及證據卡完成後逐步加入。
+
+
+## 來源證據卡索引
+- [S01：Scene-aware Fashion Recommender System](../cards/S01.md)
+- [S02：Clothing Colour Harmony Model](../cards/S02.md)
+- [S03：Clothing Aesthetics and Skin Tone](../cards/S03.md)
+- [S04：Fashion Recommendation for Personal Body Shape](../cards/S04.md)
+- [S05：Clothing Size Recommendation by Female Body Types](../cards/S05.md)
+- [S06：Learning Context-Aware Outfit Recommendation](../cards/S06.md)
