@@ -1,9 +1,9 @@
 # AI OOTD HTML Teaching Slides — Outline Draft
 
-- Status: Draft for user approval; HTML has not been generated.
+- Status: 12-slide HTML deck is generated and its visual presentation has been refreshed; this outline continues to define the teaching sequence and source boundaries.
 - Audience: General learners who want to understand clothing coordination and improve everyday outfits.
 - Language: Traditional Chinese (Taiwan wording); retain English technical terms where appropriate.
-- Teaching approach: Example-driven and application-oriented, with limited decorative imagery.
+- Teaching approach: Example-driven and application-oriented; visual direction updated to Korean/Japanese Lookbook × Fashion Editorial.
 - Planned length: 12 slides (within the course workflow's 8–15 slide check).
 - Knowledge boundary: Use the current Wiki and its evidence cards as the knowledge source. Distinguish research-supported statements from illustrative styling examples and proposed product features.
 
