@@ -10,3 +10,19 @@
 
 ## 證據與參考文獻
 待來源查證後補入。
+
+
+## 初步研究證據
+
+### 服裝顏色與膚色偏好（S03）
+
+Perrett 與 Sprengelmeyer（2021）以兩組實驗探討觀察者如何選擇與不同膚色相配的服裝顏色。研究呈現 12 位女性的臉部影像，並讓觀察者選擇模擬服裝顏色。研究摘要指出，觀察者對紅色與藍色有較明顯偏好；在該研究刺激條件下，較冷的藍色較常被選來搭配較白皙膚色，較暖的橘紅色較常被選來搭配曬黑膚色。
+
+**適用範圍與限制：** 研究對象與模擬情境有限，不能直接證明四季個人色彩分類的科學效度，也不能推論為適用所有性別、族群與文化的固定配色法則。
+
+## 證據卡
+- [S03：Clothing Aesthetics](../cards/S03.md)
+
+## 參考文獻（APA 7th）
+
+Perrett, D. I., & Sprengelmeyer, R. (2021). Clothing aesthetics: Consistent colour choices to match fair and tanned skin tones. *i-Perception, 12*(6), 1–22. https://doi.org/10.1177/20416695211053361
