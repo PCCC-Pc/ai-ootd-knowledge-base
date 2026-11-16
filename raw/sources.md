@@ -27,3 +27,25 @@ DOI：https://doi.org/10.1186/s40691-025-00433-y
 - S01 目前根據出版者會議資訊、機構典藏紀錄及摘要整理；全文方法、資料集及指標仍待核對。
 - S02 為出版者開放取用文章；本文研究範圍主要是服裝配色和兩件式服裝色彩和諧，不等同於個人色彩四季分析。
 - 後續引用請連結各自的 `cards/Sxx.md`，不可只憑來源標題延伸出未被研究支持的主張。
+
+
+## Second ingestion batch
+
+| ID | APA short title | Year | Type | Wiki topic | Verification status |
+|---|---|---:|---|---|---|
+| S03 | Perrett & Sprengelmeyer, *Clothing Aesthetics* | 2021 | Research article | Personal colour / clothing colour preference | Metadata and abstract checked; scope restricted |
+| S04 | Hidayati et al., *What Dress Fits Me Best?* | 2018 | ACM Multimedia conference paper | Body shape and style recommendation | Institutional abstract record checked |
+| S05 | Fu et al., *An Improved Clothing Size Recommendation Approach* | 2023 | Journal article | Body type and clothing size | PubMed abstract and metadata checked |
+| S06 | Abugabah et al., *Learning Context-Aware Outfit Recommendation* | 2020 | Open-access journal article | Context-aware Outfit Recommendation | Publisher indexed record; full-text detail pending |
+
+**S03**  
+Perrett, D. I., & Sprengelmeyer, R. (2021). Clothing aesthetics: Consistent colour choices to match fair and tanned skin tones. *i-Perception, 12*(6), 1–22. https://doi.org/10.1177/20416695211053361
+
+**S04**  
+Hidayati, S. C., Hua, K. L., Hsu, C. C., Fu, J., Chang, Y. T., & Cheng, W. H. (2018). What dress fits me best? Fashion recommendation on the clothing style for personal body shape. In *Proceedings of the 2018 ACM Multimedia Conference* (pp. 438–446). Association for Computing Machinery. https://doi.org/10.1145/3240508.3240546
+
+**S05**  
+Fu, B., Zheng, R., Chen, Q., & Zhang, Y. (2023). An improved clothing size recommendation approach based on subdivision of female body types. *Ergonomics, 66*(2), 167–181. https://doi.org/10.1080/00140139.2022.2069867
+
+**S06**  
+Abugabah, A., Cheng, X., & Wang, J. (2020). Learning context-aware outfit recommendation. *Symmetry, 12*(6), Article 873. https://doi.org/10.3390/sym12060873
