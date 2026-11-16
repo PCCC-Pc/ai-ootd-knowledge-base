@@ -4,7 +4,7 @@
 
 ## HTML 閱讀網站
 - [開啟 HTML Wiki](https://pccc-pc.github.io/ai-ootd-knowledge-base/wiki/index.html)
-- 介面提供八大主題索引、全文搜尋、收藏、深／淺色切換，以及原始 Markdown 連結。
+- 介面提供八大主題索引、搜尋、收藏、深／淺色切換、完整 Markdown 原文展開，以及原始 Markdown 連結。
 
 ## 八大知識主題
 1. [個人色彩分析](01-color-theory.md)
@@ -33,4 +33,4 @@
 - [S08：Personalized Wardrobe Management Application](../cards/S08.md)
 - [S09：The Science of Style](../cards/S09.md)
 
-> HTML Wiki 是八個 Markdown 主題的閱讀導覽層；逐篇原始知識內容仍以本資料夾的 Markdown 為準。各主題證據完整度不同，請保留頁面中對摘要層級與待補全文的標示。
+> HTML Wiki 內嵌八篇原始 Markdown 文章供展開閱讀；本資料夾的 Markdown 檔仍是內容維護的主要來源。各主題證據完整度不同，請保留頁面中對摘要層級與待補全文的標示。
