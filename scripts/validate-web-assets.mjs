@@ -41,7 +41,7 @@ for (const [name, html] of [["Wiki", wiki], ["Slides", deck]]) {
     name + " images all have alt text");
 }
 
-check(wiki.includes("localStorage") && wiki.includes("toggleTheme") && wiki.includes("doSearch"),
+check(wiki.includes("localStorage") && wiki.includes('search.addEventListener("input"') && wiki.includes('favoritesBtn') && wiki.includes('themeBtn'),
   "Wiki includes search, favorites and reading-theme interactions");
 check(deck.includes("addEventListener('wheel'") && deck.includes("ArrowRight") && deck.includes("touchend"),
   "Slides include wheel, keyboard and touch navigation");
