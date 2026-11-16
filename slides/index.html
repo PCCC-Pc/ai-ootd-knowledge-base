@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f6f3ee">
+<title>AI OOTD｜日常穿搭入門</title>
+<style>
+:root{--bg:#f6f3ee;--paper:#fffdfa;--ink:#282725;--muted:#77736d;--line:#e6e0d7;--accent:#9b625f;--accent-soft:#f1e4e1;--olive:#7b8068;--shadow:0 18px 55px rgba(44,38,32,.09)}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font-family:Inter,"Noto Sans TC","Microsoft JhengHei",sans-serif}body{display:flex;flex-direction:column;min-height:100vh}
+header{height:62px;padding:0 clamp(18px,5vw,72px);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:rgba(255,253,250,.82);backdrop-filter:blur(12px);position:sticky;top:0;z-index:5}.brand{font-size:13px;letter-spacing:.13em;font-weight:750}.brand span{color:var(--accent)}.top-meta{font-size:12px;color:var(--muted)}
+main{width:min(1120px,100%);margin:auto;padding:clamp(20px,4vw,46px) clamp(14px,4vw,42px);flex:1;display:flex;align-items:center}
+.deck{width:100%;min-height:min(690px,calc(100vh - 180px));background:var(--paper);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);position:relative;overflow:hidden;display:flex;flex-direction:column}
+.slide{display:none;padding:clamp(26px,5vw,68px);flex:1;animation:fade .28s ease}.slide.active{display:flex;flex-direction:column}@keyframes fade{from{opacity:.3;transform:translateY(5px)}to{opacity:1;transform:none}}
+.kicker{font-size:12px;letter-spacing:.18em;color:var(--accent);font-weight:750;text-transform:uppercase;margin-bottom:18px}.slide h1{font-size:clamp(32px,5.4vw,64px);line-height:1.15;letter-spacing:-.04em;margin:0 0 22px;max-width:850px}.slide h2{font-size:clamp(27px,4vw,43px);line-height:1.2;letter-spacing:-.035em;margin:0 0 25px}.lead{font-size:clamp(18px,2.1vw,24px);line-height:1.7;color:#55514c;max-width:850px}.accent{color:var(--accent)}.subtle{color:var(--muted)}.rule{width:58px;height:3px;background:var(--accent);margin:8px 0 26px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:18px 0}.grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}.tile{background:#faf7f2;border:1px solid var(--line);border-radius:14px;padding:18px 20px;min-height:92px}.tile strong{display:block;font-size:16px;margin-bottom:7px}.tile p{margin:0;color:#68635d;line-height:1.6;font-size:14px}.number{font-size:12px;color:var(--accent);font-weight:800;letter-spacing:.12em;margin-bottom:8px}.callout{margin-top:18px;padding:17px 20px;background:var(--accent-soft);border-left:3px solid var(--accent);border-radius:0 12px 12px 0;line-height:1.65}.note{font-size:12px;color:var(--muted);line-height:1.65;margin-top:auto;padding-top:22px}.pill{display:inline-block;padding:6px 10px;border-radius:99px;background:#eeece5;color:#625e55;font-size:12px;margin:4px 5px 4px 0}
+ul,ol{padding-left:1.25em;line-height:1.85}li{padding-left:4px;margin:4px 0}.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin:22px 0}.step{border-top:2px solid var(--accent);padding:13px 10px 10px;background:#faf7f2;border-radius:0 0 10px 10px}.step b{display:block;font-size:14px;margin:5px 0}.step p{font-size:13px;line-height:1.55;color:var(--muted);margin:0}.flow{display:flex;align-items:stretch;gap:8px;margin:28px 0;flex-wrap:wrap}.flow span{flex:1;min-width:110px;background:#f4eee8;border:1px solid var(--line);border-radius:12px;padding:16px 10px;text-align:center;font-weight:650;font-size:14px}.flow i{font-style:normal;color:var(--accent);align-self:center}
+table{width:100%;border-collapse:collapse;margin:18px 0;font-size:14px}th,td{text-align:left;padding:13px 14px;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.55}th{color:var(--accent);font-weight:750;background:#faf7f2}
+.palette{display:flex;gap:7px;margin:12px 0 6px}.swatch{height:42px;flex:1;border-radius:8px;border:1px solid rgba(0,0,0,.05)}.caption{font-size:12px;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:16px clamp(18px,4vw,46px);display:flex;align-items:center;gap:16px;background:#fffdfa}.progress{height:4px;background:#ece7df;border-radius:9px;flex:1;overflow:hidden}.progress>div{height:100%;background:var(--accent);width:8.33%;transition:width .2s}.counter{font-size:12px;color:var(--muted);min-width:48px;text-align:center}.controls{display:flex;gap:8px}.btn{border:1px solid var(--line);background:#fffdfa;color:var(--ink);padding:9px 15px;border-radius:9px;font:inherit;font-size:13px;cursor:pointer}.btn.primary{background:var(--ink);border-color:var(--ink);color:white}.btn:disabled{opacity:.35;cursor:not-allowed}.btn:focus-visible{outline:3px solid #c28b84;outline-offset:2px}
+.source{font-size:11px;color:#827c73;line-height:1.55;margin-top:14px}.source a{color:var(--accent);text-decoration:none}.source a:hover{text-decoration:underline}
+.cover-layout{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;flex:1}.wardrobe-art{min-height:270px;border-radius:18px;background:linear-gradient(145deg,#eee7df,#f8f4ee);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}.hanger{width:160px;height:160px;border:3px solid #9b8d7d;border-top:0;clip-path:polygon(50% 0,57% 8%,100% 34%,90% 43%,75% 35%,75% 100%,25% 100%,25% 35%,10% 43%,0 34%,43% 8%);background:#c7b9a9;opacity:.75}.wardrobe-art:after{content:"OUTFIT / CONTEXT / YOU";position:absolute;bottom:24px;letter-spacing:.18em;font-size:10px;color:#756b60}
+@media(max-width:700px){header{height:54px}.top-meta{display:none}main{padding:12px 10px}.deck{min-height:calc(100vh - 142px);border-radius:15px}.slide{padding:27px 22px}.grid,.grid.three{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.cover-layout{grid-template-columns:1fr}.wardrobe-art{min-height:140px}.hanger{width:100px;height:100px}.flow span{min-width:42%;}footer{gap:9px;padding:12px}.btn{padding:9px 11px}.note{padding-top:14px}table{font-size:12px}th,td{padding:9px 8px}}
+@media(max-width:420px){.grid,.grid.three{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.slide h2{font-size:26px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header><div class="brand">AI <span>OOTD</span> / STYLE GUIDE</div><div class="top-meta">日常穿搭入門・12 張教學簡報</div></header>
+<main><section class="deck" aria-label="AI OOTD 教學簡報">
+<section class="slide active" aria-label="第 1 頁">
+<div class="cover-layout"><div><div class="kicker">A beginner's guide to everyday styling</div><h1>AI OOTD：<br><span class="accent">讓每天穿搭</span><br>更有方向</h1><p class="lead">從個人偏好、衣櫃單品到每日情境，建立更有脈絡的穿搭思考方式。</p><div class="rule"></div><p class="subtle">穿搭不只是選一件衣服，而是讓每個單品一起完成今天的 Outfit。</p></div><div class="wardrobe-art" aria-hidden="true"><div class="hanger"></div></div></div>
+<div class="note">課程：AI OOTD 穿搭知識庫｜教學對象：一般穿搭初學者</div>
+</section>
+<section class="slide" aria-label="第 2 頁">
+<div class="kicker">01 / Outfit framework</div><h2>一套穿搭，究竟要考慮什麼？</h2><p class="lead">一套 Outfit 可以從七個面向思考，並依照當天需求調整優先順序。</p>
+<div class="grid">
+<div class="tile"><div class="number">01</div><strong>個人偏好</strong><p>喜歡的顏色、風格與穿著感受。</p></div><div class="tile"><div class="number">02</div><strong>衣櫃單品</strong><p>目前有哪些上衣、下身、外套、鞋子與配件。</p></div><div class="tile"><div class="number">03</div><strong>色彩</strong><p>單品顏色放在一起是否協調。</p></div><div class="tile"><div class="number">04</div><strong>版型與合身度</strong><p>尺寸、剪裁與活動時是否合適。</p></div><div class="tile"><div class="number">05</div><strong>風格</strong><p>簡約、休閒、韓系、日系或正式等感覺。</p></div><div class="tile"><div class="number">06–07</div><strong>場合與情境</strong><p>上課、上班、約會、旅行，以及時間與地點。</p></div></div>
+<div class="callout"><b>重點：</b>這是本簡報的教學整理架構，不是經研究驗證的通用公式。</div><div class="source">研究背景：S01、S06、S07。Wiki：03、05、06、08。</div>
+</section>
+<section class="slide" aria-label="第 3 頁">
+<div class="kicker">02 / Colour preference</div><h2>先認識自己的色彩偏好</h2><p class="lead">選衣服的顏色，可以先從「自己喜歡、穿起來自在」開始。</p>
+<div class="grid"><div class="tile"><strong>研究怎麼做？</strong><p>Perrett 與 Sprengelmeyer（2021）以臉部影像及模擬服裝顏色進行兩組實驗。</p></div><div class="tile"><strong>研究觀察</strong><p>在該研究刺激條件下，較冷的藍色較常被選來搭配較白皙膚色；較暖的橘紅色較常被選來搭配曬黑膚色。</p></div></div>
+<div class="palette"><div class="swatch" style="background:#9aafc4"></div><div class="swatch" style="background:#6f849b"></div><div class="swatch" style="background:#c8795d"></div><div class="swatch" style="background:#a9503e"></div></div><div class="caption">色票僅作顏色示意，並非個人色彩診斷。</div>
+<div class="callout"><b>研究界線：</b>研究對象與模擬情境有限，不能據此證明四季個人色彩分類的科學效度，也不能推論成適用所有人的固定配色規則。</div>
+<div class="source">研究依據：S03。Perrett & Sprengelmeyer (2021), <i>i-Perception, 12</i>(6). <a href="https://doi.org/10.1177/20416695211053361" target="_blank" rel="noopener">DOI</a></div>
+</section>
+<section class="slide" aria-label="第 4 頁">
+<div class="kicker">03 / Colour matching</div><h2>穿搭配色：相近與對比如何平衡？</h2><p class="lead">配色不只是「全部一樣」或「越衝突越好」，也可以觀察顏色之間的協調程度。</p>
+<div class="grid three"><div class="tile"><strong>相近色</strong><div class="palette"><i class="swatch" style="background:#d4c5b2"></i><i class="swatch" style="background:#b9a38e"></i><i class="swatch" style="background:#8d7969"></i></div><p>整體感受較一致。</p></div><div class="tile"><strong>強烈對比</strong><div class="palette"><i class="swatch" style="background:#273b53"></i><i class="swatch" style="background:#e3b74f"></i><i class="swatch" style="background:#f3eee5"></i></div><p>顏色差異較明顯。</p></div><div class="tile"><strong>適度協調</strong><div class="palette"><i class="swatch" style="background:#7d8b7b"></i><i class="swatch" style="background:#d2bda5"></i><i class="swatch" style="background:#a36e64"></i></div><p>保留差異，也注意整體關係。</p></div></div>
+<p>Gray 等人（2014）讓 239 位參與者評估研究中的服裝色彩組合；在受控色彩組合中，適度協調的組合獲得較高時尚感評價。Li 等人（2025）則研究以 ML/DL 評估及推薦服裝色彩和諧。</p>
+<div class="callout">這些研究不是所有真實穿搭的通用公式；三種色票是教學示例，不代表絕對好壞。</div>
+<div class="source">研究依據：S02、S09。<a href="https://doi.org/10.1371/journal.pone.0102772" target="_blank" rel="noopener">Gray et al. (2014), DOI</a> · <a href="https://doi.org/10.1186/s40691-025-00433-y" target="_blank" rel="noopener">Li et al. (2025), DOI</a></div>
+</section>
+<section class="slide" aria-label="第 5 頁">
+<div class="kicker">04 / Fit & silhouette</div><h2>身形與服裝版型：先看合身與比例</h2><p class="lead">身形資訊可以成為推薦參考，但不應變成「某種身形只能穿某種衣服」。</p>
+<div class="grid"><div class="tile"><strong>身形與風格推薦｜S04</strong><p>Hidayati 等人（2018）探討利用身形屬性與服裝風格相容性進行推薦。</p></div><div class="tile"><strong>尺寸與合身度｜S05</strong><p>Fu 等人（2023）研究女性身形細分與服裝尺寸推薦，重點在尺寸與合身度。</p></div></div>
+<h3>挑選衣服時，可以先觀察：</h3><ul><li>尺寸是否合適？</li><li>肩線、腰身或褲長是否符合自己的需求？</li><li>坐下、走路與抬手時是否舒適？</li><li>自己喜歡衣服呈現的輪廓與比例嗎？</li></ul>
+<div class="callout">兩篇研究的焦點不同；不能據此推導每種身形的固定穿搭規則。</div>
+<div class="source">研究依據：S04、S05。<a href="https://doi.org/10.1145/3240508.3240546" target="_blank" rel="noopener">Hidayati et al. (2018), DOI</a> · <a href="https://doi.org/10.1080/00140139.2022.2069867" target="_blank" rel="noopener">Fu et al. (2023), DOI</a></div>
+</section>
+<section class="slide" aria-label="第 6 頁">
+<div class="kicker">05 / Personal style</div><h2>找到自己的穿搭風格</h2><p class="lead">風格是個人偏好與服裝特徵的組合，可以依場合與心情調整。</p>
+<div class="grid"><div class="tile"><strong>簡約</strong><p>俐落、簡潔的視覺感受。</p></div><div class="tile"><strong>休閒</strong><p>以日常活動與自在穿著為主。</p></div><div class="tile"><strong>韓系／日系</strong><p>觀察穿搭輪廓、單品與搭配元素。</p></div><div class="tile"><strong>正式</strong><p>配合場合及服裝規範。</p></div></div>
+<div class="callout">Shirkhani 等人（2023）的 survey 指出，時尚推薦除了商品相似度，也需要考慮服裝之間的 <b>compatibility</b>，並整理 user、clothing 與 context 等資訊面向。</div>
+<p class="subtle">風格名稱是教學描述例子，不代表研究證明某種風格適合特定族群。</p>
+<div class="source">研究依據：S07。<a href="https://doi.org/10.1007/s42979-023-01932-9" target="_blank" rel="noopener">Shirkhani et al. (2023), DOI</a></div>
+</section>
+<section class="slide" aria-label="第 7 頁">
+<div class="kicker">06 / Outfit building</div><h2>從單品組合成完整 Outfit</h2><p class="lead">從一件主角單品開始，再逐步完成整套搭配。</p>
+<div class="steps"><div class="step"><div class="number">01</div><b>選主角單品</b><p>先決定上衣、下身或外套。</p></div><div class="step"><div class="number">02</div><b>搭配主單品</b><p>確認顏色、版型與需求。</p></div><div class="step"><div class="number">03</div><b>加入層次</b><p>依活動與環境決定外套。</p></div><div class="step"><div class="number">04</div><b>選鞋與配件</b><p>讓整體風格更完整。</p></div><div class="step"><div class="number">05</div><b>最後檢查</b><p>方便、舒適，而且自己喜歡。</p></div></div>
+<div class="callout"><b>小提醒：</b>不需要每件單品都搶眼；先讓整套 Outfit 有清楚的搭配方向。</div>
+<p>這五步驟是本簡報設計的入門操作流程，並非研究直接驗證的標準程序。色彩協調研究可作為其中一項參考。</p>
+<div class="source">教學示例流程；研究背景：S02、S09。<a href="https://doi.org/10.1371/journal.pone.0102772" target="_blank" rel="noopener">S09 DOI</a> · <a href="https://doi.org/10.1186/s40691-025-00433-y" target="_blank" rel="noopener">S02 DOI</a></div>
+</section>
+<section class="slide" aria-label="第 8 頁">
+<div class="kicker">07 / Occasion & context</div><h2>不同場合，穿搭條件也不同</h2><p class="lead">同一套衣服不一定適合每一種活動，先確認當天真正需要什麼。</p>
+<table><thead><tr><th>情境</th><th>優先確認的條件</th></tr></thead><tbody><tr><td>上課</td><td>活動時間、移動需求、舒適度</td></tr><tr><td>上班</td><td>工作環境、場合規範、活動需求</td></tr><tr><td>約會</td><td>活動內容、地點、想呈現的風格</td></tr><tr><td>旅行</td><td>行程活動、移動量、重複搭配需求</td></tr><tr><td>正式場合</td><td>Dress code、活動性質與服裝規範</td></tr></tbody></table>
+<p>Ye 等人（2023）提出 Scene-aware Fashion Recommender System；Abugabah 等人（2020）研究 context-aware outfit recommendation。</p>
+<div class="callout">研究支持將場景或情境納入推薦方向，但不代表已證明能讀取行事曆、查天氣或每日推播。</div>
+<div class="source">研究依據：S01、S06。<a href="https://doi.org/10.1145/3543507.3583435" target="_blank" rel="noopener">Ye et al. (2023), DOI</a> · <a href="https://doi.org/10.3390/sym12060873" target="_blank" rel="noopener">Abugabah et al. (2020), DOI</a></div>
+</section>
+<section class="slide" aria-label="第 9 頁">
+<div class="kicker">08 / Wardrobe management</div><h2>衣櫃管理：用現有衣服創造更多組合</h2><p class="lead">先整理衣櫃，再思考還缺少什麼。</p>
+<div class="grid"><div class="tile"><strong>類別</strong><p>上衣、下身、外套、鞋子、配件。</p></div><div class="tile"><strong>顏色</strong><p>主要顏色與可辨識的色彩特徵。</p></div><div class="tile"><strong>風格</strong><p>休閒、正式、簡約等個人標籤。</p></div><div class="tile"><strong>使用情況</strong><p>常穿、較少穿、適合哪些場合。</p></div></div>
+<p>S07 的 survey 將 capsule wardrobe recommendation 列為研究任務之一；S08 提出個人衣櫃管理應用，摘要描述根據既有衣物與指定目的產生 Outfit 候選。</p>
+<div class="callout">S08 摘要中的 MSE 與 cosine similarity 是 embedding 預測指標，不能直接解讀成使用者滿意度或真實穿搭效果。</div>
+<div class="source">研究依據：S07、S08。<a href="https://doi.org/10.1007/s42979-023-01932-9" target="_blank" rel="noopener">S07 DOI</a> · <a href="https://doi.org/10.1016/j.procs.2026.08.330" target="_blank" rel="noopener">S08 DOI</a></div>
+</section>
+<section class="slide" aria-label="第 10 頁">
+<div class="kicker">09 / AI recommendation</div><h2>AI OOTD 如何產生推薦？</h2><p class="lead">AI 不只是找出相似的衣服，還需要考慮整套 Outfit 是否相容。</p>
+<div class="flow"><span>使用者偏好</span><i>+</i><span>衣櫃單品</span><i>+</i><span>場合情境</span></div><div class="flow"><span>產生候選 Outfit</span><i>→</i><span>評估與排序</span><i>→</i><span>推薦理由與回饋</span></div>
+<div class="grid"><div class="tile"><strong>可能的輸入</strong><p>偏好、服裝類別與特徵、活動及必要情境資訊。</p></div><div class="tile"><strong>可能的輸出</strong><p>候選 Outfit、搭配考量與可供使用者調整的建議。</p></div></div>
+<div class="callout"><b>概念設計，尚未實作。</b>此流程是依據相關研究方向整理的專案架構，不是已完成或已測試的 AI OOTD 系統。</div>
+<div class="source">研究背景：S01、S02、S04、S06、S07、S08。完整文獻見專案 Wiki。</div>
+</section>
+<section class="slide" aria-label="第 11 頁">
+<div class="kicker">10 / Calendar Memory concept</div><h2>Calendar Memory：<br>從每日行程到 Outfit 規劃</h2><p class="lead">如果 AI 能在使用者授權下理解當天行程，就能把活動情境納入穿搭規劃。</p>
+<div class="grid"><div class="tile"><strong>上午</strong><p>課堂報告</p></div><div class="tile"><strong>下午</strong><p>圖書館讀書</p></div><div class="tile"><strong>晚上</strong><p>與朋友聚餐</p></div><div class="tile"><strong>規劃方式</strong><p>行程條件 → 衣櫃與偏好 → Outfit 建議</p></div></div>
+<h3>隱私原則</h3><ul><li>未經明確授權，不讀取行事曆。</li><li>只處理推薦所需的最少資訊。</li><li>不將私人行程或個資寫入公開 GitHub Repository。</li><li>提供撤回授權及刪除資料的方式。</li></ul>
+<div class="callout"><b>未來功能構想：</b>目前尚未實作 Calendar Memory、天氣 API 或 Daily Outfit Push。</div>
+<div class="source">提案功能，不是研究實證或現有功能。研究背景：S01、S06、S07。</div>
+</section>
+<section class="slide" aria-label="第 12 頁">
+<div class="kicker">11 / Daily practice</div><h2>把穿搭變成可持續的日常習慣</h2><p class="lead">每日 Outfit 五步驟，從今天開始練習。</p>
+<div class="steps"><div class="step"><div class="number">01</div><b>看行程</b><p>今天要去哪裡、做什麼？</p></div><div class="step"><div class="number">02</div><b>選單品</b><p>從現有衣櫃挑主要服裝。</p></div><div class="step"><div class="number">03</div><b>看搭配</b><p>檢查顏色、版型與風格。</p></div><div class="step"><div class="number">04</div><b>補完整</b><p>依需要加入外套、鞋與配件。</p></div><div class="step"><div class="number">05</div><b>做確認</b><p>舒適、合場合，而且喜歡。</p></div></div>
+<div class="callout"><b>最後記住三件事</b><br>穿搭沒有適用所有人的唯一標準。研究可以提供參考，但要留意研究範圍。AI 可以協助整理資訊與提出選項，最後仍由使用者決定。</div>
+<p class="subtle">這是本簡報的入門總結流程，不是單一研究驗證的標準程序。</p>
+<div class="source">綜合 Wiki：01–08；研究來源依各頁所列 S01–S09。</div>
+</section>
+</section></main>
+<footer><button class="btn" id="prev" type="button" aria-label="上一頁">← 上一頁</button><div class="progress" role="progressbar" aria-label="簡報進度" aria-valuemin="1" aria-valuemax="12" aria-valuenow="1" id="progress"><div id="bar"></div></div><div class="counter" id="counter" aria-live="polite">01 / 12</div><button class="btn primary" id="next" type="button" aria-label="下一頁">下一頁 →</button></footer>
+<script>
+(()=>{const slides=[...document.querySelectorAll('.slide')],prev=document.getElementById('prev'),next=document.getElementById('next'),counter=document.getElementById('counter'),bar=document.getElementById('bar'),progress=document.getElementById('progress');let current=0;
+function show(n){current=Math.max(0,Math.min(slides.length-1,n));slides.forEach((s,i)=>{s.classList.toggle('active',i===current);s.setAttribute('aria-hidden',i===current?'false':'true')});counter.textContent=String(current+1).padStart(2,'0')+' / '+String(slides.length).padStart(2,'0');bar.style.width=((current+1)/slides.length*100)+'%';progress.setAttribute('aria-valuenow',String(current+1));prev.disabled=current===0;next.disabled=current===slides.length-1;document.title='AI OOTD｜'+(current+1)+' / '+slides.length; }
+prev.addEventListener('click',()=>show(current-1));next.addEventListener('click',()=>show(current+1));document.addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();show(current+1)}if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();show(current-1)}if(e.key==='Home')show(0);if(e.key==='End')show(slides.length-1)});let startX=0;document.querySelector('.deck').addEventListener('touchstart',e=>{startX=e.changedTouches[0].clientX},{passive:true});document.querySelector('.deck').addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-startX;if(Math.abs(dx)>60)show(current+(dx<0?1:-1))},{passive:true});show(0)})();
+</script>
+</body></html>
