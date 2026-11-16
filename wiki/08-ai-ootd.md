@@ -47,3 +47,12 @@ Li 等人（2025）提出以服裝影像、色彩特徵及觀察者感知為基�
 Li, H.-C., Wang, L.-K., Chang, Y.-K., & Huang, K.-Y. (2025). Establishing colour harmony evaluation and recommendation model for clothing colour matching based on machine learning and deep learning. *Fashion and Textiles, 12*, Article 27. https://doi.org/10.1186/s40691-025-00433-y
 
 Ye, T., Hu, L., Zhang, Q., Lai, Z. Y., Naseem, U., & Liu, D. D. (2023). Show me the best outfit for a certain scene: A scene-aware fashion recommender system. In *Proceedings of the ACM Web Conference 2023* (pp. 1172–1180). Association for Computing Machinery. https://doi.org/10.1145/3543507.3583435
+
+
+### 3. Body shape and style attributes can be recommendation signals (S04)
+
+Hidayati 等人（2018）提出以使用者身形屬性與服裝風格相容性作為推薦方向。此研究可作為未來個人化推薦考慮身形條件的技術參考，但目前摘要層級資料不足以支持具體版型規則。
+
+### 4. Outfit context is an established recommendation research topic (S06)
+
+Abugabah 等人（2020）的研究主題為 context-aware outfit recommendation，與本專案希望將場合與活動情境納入 Outfit 推薦的方向相關。此批次僅確認出版者索引的書目與摘要資訊；具體情境變數、模型與評估結果尚待全文檢視。
