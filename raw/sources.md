@@ -48,3 +48,6 @@ Le, T.-N., Nguyen Huu, V. L., & Tran, A. C. (2026). A personalized wardrobe mana
 - S06 is a context-aware recommendation study; details beyond the checked record remain pending.
 - S07 is a survey, not a user trial of this repository's proposed product.
 - S08 is currently abstract-level; reported embedding metrics are not user satisfaction measures.
+
+**S09**  
+Gray, K., Schmitt, P., Strohminger, N., & Kassam, K. S. (2014). The science of style: In fashion, colors should match only moderately. *PLOS ONE, 9*(7), e102772. https://doi.org/10.1371/journal.pone.0102772
